@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='apping_x2_p21_ghibliquiz'
