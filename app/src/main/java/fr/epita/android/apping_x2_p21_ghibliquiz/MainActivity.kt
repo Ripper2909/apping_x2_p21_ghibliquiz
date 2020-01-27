@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         "", "", "", "", ""
     )
 
-    fun listInitializer(answsers: ArrayList<PeopleModel>) {
+    fun listInitializer(answer: ArrayList<PeopleModel>) {
         val itemClickListener = View.OnClickListener {
             val peopleName = it.tag as String
             getDetails(peopleName)
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
         answers.setHasFixedSize(true)
         answers.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        answers.adapter = AnswerAdapter(this, answsers, itemClickListener)
+        answers.adapter = AnswerAdapter(this, answer, itemClickListener)
     }
 
     private fun peopleChecker(peopleName: String): Boolean {
@@ -90,6 +90,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        answers.add((0..6).random(), people)
         return answers
     }
 
