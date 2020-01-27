@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">apping_x2_p21_ghibliquiz</string>
+    <string name="app_name">Ghibli Quiz</string>
+    <string name="title">The QUIZ</string>
+    <string name="logo_description">Logo</string>
+    <string name="initialization">Initializing data...</string>
+    <string name="main_question">Which one of these characters can be found in the movie __movie__ ?</string>
 </resources>
